@@ -1,25 +1,86 @@
 :root {
---color-primary: #08A6E4;
---color-primary-shadow: rgba(7, 172, 230, .16);
---color-redish: #FB3B64;
---color-green: #55DFB4;
---color-black: #000000;
---color-grey: #A5A5A5;
---color-light-grey:#F7F7F7;
---color-white: #FFFFFF;
+	--color-primary: #08a6e4;
+	--color-primary-shadow: rgba(7, 172, 230, 0.16);
+	--color-redish: #fb3b64;
+	--color-green: #55dfb4;
+	--color-black: #000000;
+	--color-grey: #a5a5a5;
+	--color-light-grey: #f7f7f7;
+	--color-white: #ffffff;
+	--font-raleway: "Raleway", sans-serif;
+	--font-open-sans: "Open Sans", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
+	font-family: var(--font-open-sans);
+}
 
+h1 {
 }
 
 /*  */
 .container {
-    width: 1352px;
+	max-width: 1352px;
+}
+
+/* Navigation */
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid var(--color-primary-shadow);
+	margin: 0.2rem;
+}
+
+.logo::before {
+	content: "BestShop";
+	font-size: 2rem;
+	color: var(--color-primary);
+}
+
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 3rem;
+}
+
+.navBar li {
+	margin-right: 4rem;
+}
+
+/* Header */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+main h3 {
+	text-align: center;
+}
+
+main button {
+    color: var(--color-white);
+   background-color: var(--color-primary);
+   border: none;
+   border-radius: 25px;
+   width: 200px;
+   height: 50px;
+
+
+}
+
+.bg-main {
+    width: 100%;
+    height: auto;
 }
