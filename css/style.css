@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 
 /*  */
@@ -43,9 +43,10 @@ h3 {
 /* Navigation */
 .navBar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	border: 1px solid var(--color-primary-shadow);
 	margin: 0.2rem;
+	box-shadow: 0px 5px 10px 0px rgba(125, 125, 125, 0.136);
 }
 
 .logo::before {
@@ -223,14 +224,97 @@ main button {
 .pricing-row {
 	display: flex;
 	justify-content: space-between;
+	margin: 100px 0;
 }
 
 .pricing-container {
 	border: 1px solid black;
 	border-radius: 15px;
-	padding: 130px;
+	padding: 100px 130px;
+}
+
+.pricing-container-first-row {
+	padding: 20px;
+}
+
+.pricing-container-first-row div {
+	font-size: 3rem;
+	font-weight: 200;
+	color: var(--color-redish);
+}
+.pricing-container-first-row p {
+	font-weight: 800;
+	font-size: 0.7rem;
+}
+
+.pricing-container li {
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .pricing-button {
+}
+/* Contact */
+.contact-container {
+	display: flex;
+	justify-content: center;
+	padding: 100px 0;
+}
+
+.contact-column {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.contact-checkbox input {
+}
+
+.contact-info {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.contact-info a {
+	text-decoration: none;
+	color: var(--color-black);
+}
+
+.contact-column p {
+	margin: 40px 0;
+}
+
+.contact-container-button {
+	display: flex;
+	justify-content: flex-end;
+}
+.contact-button {
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: 30px;
+	height: 50px;
+	width: 250px;
+	margin-top: 20px;
+}
+/* Footer */
+.footer-container {
+	background-color: var(--color-light-grey);
+	box-shadow: 0px -5px 10px 0px rgba(66, 68, 90, 1);
+	height: 100px;
+}
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
 }
 /*test*/
