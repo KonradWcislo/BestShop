@@ -215,5 +215,22 @@ main button {
 	display: block;
 	margin: auto;
 }
+/* Pircing */
+.pricing-heading {
+	text-align: center;
+	margin: 100px;
+}
+.pricing-row {
+	display: flex;
+	justify-content: space-between;
+}
 
+.pricing-container {
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 130px;
+}
+
+.pricing-button {
+}
 /*test*/
