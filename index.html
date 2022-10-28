@@ -19,63 +19,61 @@
 
 <body>
     <!-- Header -->
-    <header class="">
-        <nav class="navBar">
-            <a href="#" class="logo"></a>
+    <header class="header-container">
+        <nav class="navBar container">
+            <a class="logo"></a>
             <ul class="navigation">
                 <li><a href="#">Why us</a></li>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="">
+    <main class="main-container">
         <h1>Sell More!</h1>
-        <h3>Open shop on our platform and increase your sales</h3>
+        <p>Open shop on our platform and increase your sales</p>
         <button>Open your shop</button>
         <img class="bg-main" src="./assets/Background.png" />
     </main>
     <!-- Statistics -->
-    <section class="first-section container">
+    <section name="statistics" class="first-section container">
         <h2>The most popular sales platform in country</h2>
         <div class="statistics-row">
-
-
             <div>
                 <div class="statistics-container">
-                    <div class="statistics-circle">
-                        <img src="assets/Person.svg" alt="person" class="statistics-img" />
+                    <div class="statistics-circle-person">
+                        <img src="assets/Person.svg" alt="person" class="statistics-img statistics-img-person" />
                     </div>
-                    <div>100000+</div>
-                    <div>daily entries</div>
+                    <div class="statistic-container-2">100000+</div>
+                    <div class="statistic-container-3">daily entries</div>
                 </div>
             </div>
 
             <div>
                 <div class="statistics-container">
-                    <div class="statistics-circle">
-                        <img src="assets/Eye.svg" alt="person" class="statistics-img" />
+                    <div class="statistics-circle-eye">
+                        <img src="assets/Eye.svg" alt="person" class="statistics-img statistics-img-eye" />
                     </div>
-                    <div>2000000+</div>
-                    <div>seen products every day</div>
+                    <div class="statistic-container-2">2000000+</div>
+                    <div class="statistic-container-3">seen products every day</div>
                 </div>
             </div>
 
             <div>
                 <div class="statistics-container">
-                    <div class="statistics-circle">
-                        <img src="assets/Catalog.svg" alt="person" class="statistics-img" />
+                    <div class="statistics-circle-catalog">
+                        <img src="assets/Catalog.svg" alt="person" class="statistics-img statistics-img-catalog" />
                     </div>
-                    <div>10000+</div>
-                    <div>added posts daily</div>
+                    <div class="statistic-container-2">10000+</div>
+                    <div class="statistic-container-3">added posts daily</div>
                 </div>
             </div>
 
         </div>
     </section>
     <!-- Benefits -->
-    <section class="bg-container">
+    <section id="benefits" class="bg-container">
         <div class="benefits container">
 
             <!-- first row -->
@@ -88,7 +86,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="benefits-background-macbook">
-                    <img src="./assets/Macbook.png" alt="macbook" class="benefits-img" />
+                    <img src="./assets/Macbook.png" alt="macbook" class="benefits-img-macbook" />
                 </div>
             </div>
 
@@ -104,23 +102,25 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="benefits-background-iphone">
-                    <img src="./assets/iPhone.png" alt="iphone" class="benefits-img" />
+                    <img src="./assets/iPhone.png" alt="iphone" class="benefits-img-iphone" />
                 </div>
             </div>
 
 
             <!-- third row -->
-            <div class="benefits-row-third">
-                <div class="benefits-text benefits-text-trumpet">
+            <div class="benefits-row">
+                <div class="benefits-row-third">
+                    <div class="benefits-text benefits-text-trumpet">
+                        <h2 class="benefits-title">Your shop is
+                            where you are!</h2>
+                        <p class="benefits-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
 
-                    <h2 class="benefits-title">Increase recognition your brand!</h2>
-                    <p class="benefits-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-
-                <div class="benefits-background-trumpet">
-                    <img src="./assets/Trumpet.png" alt="trumpet" class="benefits-img" />
+                    <div class="benefits-background-trumpet">
+                        <img src="./assets/Trumpet.png" alt="trumpet" class="benefits-img-trumpet" />
+                    </div>
                 </div>
             </div>
 
@@ -128,7 +128,7 @@
         </div>
     </section>
     <!-- pricing -->
-    <section>
+    <section id="prices">
         <div class="container">
             <h2 class="pricing-heading">Pricing</h2>
             <div class="pricing-row">
@@ -182,7 +182,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="container">
+    <section id="contact" class="container">
         <div class="contact-container">
             <div class="contact-column">
                 <h1>Any questions?</h1>
@@ -199,7 +199,7 @@
                 <label for="email">E-MAIL</label>
                 <input type="name" />
                 <div class="contact-checkbox">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                     <p>I hereby give consent for my personal data included in my
                         application to be processed for the purposes of the recruitment process under the European
                         Parliament’s

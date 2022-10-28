@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 h3 {
@@ -41,53 +41,77 @@ h3 {
 }
 
 /* Navigation */
+.header-container {
+	box-shadow: 0px 5px 10px 0px rgba(125, 125, 125, 0.136);
+	padding: 10px;
+}
+
 .navBar {
 	display: flex;
-	justify-content: space-around;
-	border: 1px solid var(--color-primary-shadow);
-	margin: 0.2rem;
-	box-shadow: 0px 5px 10px 0px rgba(125, 125, 125, 0.136);
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
 }
 
 .logo::before {
 	content: "BestShop";
 	font-size: 2rem;
 	color: var(--color-primary);
+	font-weight: 200;
+	font-family: var(--font-raleway);
 }
 
 .navigation {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 3rem;
+	height: 50px;
 }
 
-.navBar li {
-	margin-right: 4rem;
+.navBar li a {
+	margin-right: 3rem;
+	font-size: 0.7rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: var(--font-raleway);
+	color: var(--color-grey);
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 28px 18px 22px;
+	border-bottom: 4px solid transparent;
+}
+
+.navBar li a:hover {
+	border-color: var(--color-primary);
+	color: var(--color-black);
 }
 
 /* Main */
-main {
+.main-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 130px;
 }
 
-main h1 {
+.main-container h1 {
 	text-align: center;
+	font-family: var(--font-raleway);
 }
 
-main h3 {
+.main-container p {
 	text-align: center;
+	margin: 20px 0 30px 0;
 }
 
-main button {
+.main-container button {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 	border: none;
 	border-radius: 25px;
-	width: 200px;
-	height: 50px;
+	width: 450px;
+	height: 60px;
+	font-weight: 700;
 }
 
 .bg-main {
@@ -96,14 +120,19 @@ main button {
 }
 
 /* Statistics Section */
-
 .first-section {
 	text-align: center;
+	padding: 100px 0;
+}
+
+.first-section h2 {
+	margin-bottom: 80px;
 }
 
 .statistics-row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 200px;
 	align-items: center;
 	padding: 2rem;
 }
@@ -114,16 +143,57 @@ main button {
 	gap: 15px;
 }
 
-.statistics-circle {
-	border: 30px solid rgba(255, 0, 0, 0.562);
+.statistic-container-2 {
+	font-size: 1.1rem;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-family: var(--font-raleway);
+}
+
+.statistic-container-3 {
+	width: 120px;
+	color: var(--color-grey);
+}
+
+.statistics-circle-person,
+.statistics-circle-eye,
+.statistics-circle-catalog {
+	border: 30px solid;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
 	position: relative;
+	left: 30px;
+}
+
+.statistics-circle-person {
+	border: 30px solid var(--color-redish);
+}
+
+.statistics-circle-eye {
+	border: 30px solid var(--color-primary);
+}
+
+.statistics-circle-catalog {
+	border: 30px solid var(--color-green);
 }
 
 .statistics-img {
 	position: absolute;
+}
+
+.statistics-img-person {
+	top: -30px;
+}
+
+.statistics-img-eye {
+	top: -18px;
+	left: -2px;
+}
+
+.statistics-img-catalog {
+	top: -25px;
+	left: -4px;
 }
 
 /* Benefits Section */
@@ -136,23 +206,31 @@ main button {
 }
 
 .benefits-row {
-	padding: 40px;
+	padding: 80px 40px;
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--color-white);
-	margin-bottom: 40px;
+	margin: 40px 100px;
+	height: 350px;
 }
 
-.benefits-img {
-	width: 400px;
-	position: relative;
+.benefits-description {
+	width: 430px;
+	line-height: 22px;
 }
+
 .benefits-text::after {
 	content: "";
 	position: absolute;
 	height: 4px;
-	width: 400px;
+	width: 350px;
 	margin-top: 50px;
+}
+
+.benefits-title {
+	padding-bottom: 40px;
+	font-family: var(--font-raleway);
+	width: 300px;
 }
 
 /* first row */
@@ -164,7 +242,7 @@ main button {
 	background-color: var(--color-redish);
 }
 
-.benefits-background-macbook:before {
+.benefits-background-macbook::before {
 	content: "";
 	position: absolute;
 	background-color: var(--color-redish);
@@ -172,8 +250,13 @@ main button {
 	height: 150px;
 	transform: rotate(45deg);
 	border-radius: 25%;
-}
 
+	display: block;
+}
+.benefits-img-macbook {
+	width: 400px;
+	position: relative;
+}
 /* second row */
 .benefits-row-second {
 	flex-direction: row-reverse;
@@ -185,6 +268,19 @@ main button {
 .benefits-text-iphone::after {
 	background-color: var(--color-primary);
 }
+.benefits-img-iphone {
+	width: 380px;
+	position: relative;
+}
+.benefits-img-iphone::before {
+	content: "";
+	position: absolute;
+	background-color: var(--color-primary);
+	width: 400px;
+	height: 400px;
+
+}
+
 /* third row */
 .benefits-row-third {
 	display: flex;
@@ -215,6 +311,10 @@ main button {
 .benefits-img {
 	display: block;
 	margin: auto;
+}
+.benefits-img-trumpet {
+	width: 400px;
+	position: relative;
 }
 /* Pircing */
 .pricing-heading {
