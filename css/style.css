@@ -278,7 +278,6 @@ h3 {
 	background-color: var(--color-primary);
 	width: 400px;
 	height: 400px;
-
 }
 
 /* third row */
@@ -319,40 +318,112 @@ h3 {
 /* Pircing */
 .pricing-heading {
 	text-align: center;
-	margin: 100px;
+	margin-top: 100px;
+	font-family: var(--font-raleway);
 }
 .pricing-row {
 	display: flex;
 	justify-content: space-between;
-	margin: 100px 0;
+	margin: 50px 50px;
 }
 
 .pricing-container {
-	border: 1px solid black;
 	border-radius: 15px;
-	padding: 100px 130px;
+	padding: 0 115px;
+	display: flex;
+	flex-direction: column;
 }
 
-.pricing-container-first-row {
-	padding: 20px;
+.pricing-container-basic {
+	border: 1.5px solid var(--color-redish);
+	margin: 15px 0;
+}
+.pricing-container-premium {
+	border: 1.5px solid var(--color-green);
+	margin: 15px 0;
+}
+.pricing-container-professional {
+	border: 1.5px solid var(--color-primary);
 }
 
-.pricing-container-first-row div {
+.pricing-price {
 	font-size: 3rem;
 	font-weight: 200;
-	color: var(--color-redish);
+	margin: 25px 0 15px 0;
 }
+
+.pricing-price-basic {
+	color: var(--color-redish);
+	margin-bottom: 30px;
+}
+
+.pricing-price-professional {
+	color: var(--color-primary);
+}
+
+.pricing-price-premium {
+	color: var(--color-green);
+	margin-bottom: 20px;
+}
+.pricing-container-first-row {
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.pricing-container-first-row h3 {
+	font-weight: 800;
+	padding-top: 30px;
+}
+
 .pricing-container-first-row p {
 	font-weight: 800;
 	font-size: 0.7rem;
 }
 
-.pricing-container li {
+.pricing-item,
+.pricing-item-no {
 	margin-bottom: 20px;
 	text-align: center;
+	font-size: 0.9rem;
+}
+
+.pricing-item::before {
+	content: "";
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	background-image: url(../assets/Ckechmark-1.svg);
+	background-repeat: no-repeat;
+	margin-left: -20px;
+}
+
+.pricing-item-no::before {
+	background-image: url(../assets/Close.svg);
 }
 
 .pricing-button {
+	position: relative;
+	
+	background-color: var(--color-primary);
+	text-align: center;
+	width: 160px;
+	height: 40px;
+	padding: 7%;
+	border-radius: 30px;
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.pricing-button-basic {
+	background-color: var(--color-redish);
+	top: 23px;
+}
+.pricing-button-professional {
+	top: 55px;
+}
+.pricing-button-premium {
+	background-color: var(--color-green);
+	top: 23px;
 }
 /* Contact */
 .contact-container {
