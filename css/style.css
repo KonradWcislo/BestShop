@@ -58,7 +58,7 @@ h3 {
 	font-size: 2rem;
 	color: var(--color-primary);
 	font-weight: 200;
-	font-family: var(--font-raleway);	
+	font-family: var(--font-raleway);
 }
 
 .navigation {
@@ -108,7 +108,7 @@ h3 {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 	border: none;
-	border-radius: 25px;
+	border-radius: 30px;
 	width: 450px;
 	height: 60px;
 	font-weight: 700;
@@ -463,7 +463,6 @@ h3 {
 	font-size: 0.7rem;
 	font-weight: 600;
 	letter-spacing: 4px;
-	
 }
 
 .contact-column input {
@@ -540,4 +539,70 @@ h3 {
 	justify-content: space-between;
 	width: 80px;
 }
-/*test*/
+
+/* RWD */
+
+@media screen and (max-width: 960px) {
+	body {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 0.3rem;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.navigation {
+		display: none;
+	}
+	.main-container button {
+		width: 80vw;
+	}
+
+	.first-section h2 {
+		width: 60vw;
+		margin: auto;
+	}
+
+	.statistics-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 50px;
+	}
+
+	.benefits-description {
+	}
+	
+	/* Pricing */
+	.pricing-row {
+		flex-direction: column;
+	}
+
+	.pricing-button-basic {
+	}
+
+	/* Contact */
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-info {
+		flex-direction: column;
+	}
+
+	.contact-column {
+		width: 90vw;
+	}
+}
